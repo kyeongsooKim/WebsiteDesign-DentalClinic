@@ -538,7 +538,7 @@ img:hover {
 
 /* contact section */
 #contact {
-  padding-top: 60px;
+  padding-top: 130px;
   padding-bottom: 60px;
   text-align: center;
 }
@@ -591,6 +591,14 @@ img:hover {
   color: #202020;
 }
 
+
+
+ #map {
+    padding-top: 90px;
+  }
+
+
+
 /* footer section */
 
 
@@ -612,23 +620,25 @@ img:hover {
 }
    
 .customer_center p {
-  font-size: 30px
+  font-size: 18px
 
 }
 
 .customer_center th, .customer_center td {
-  padding: 15px 0;
+  padding: 15px 10px;
   border-bottom: 1px solid #3BC1F3;
   letter-spacing: 0.5px;
+  max-width: 80px;
 }
 
 .customer_center h2 {
-  padding-top: 30%;
+  padding-top: 40px;
   font-size:25px;
 }
 
 footer .customer_center th, .customer_center td {
-    padding: 15px 0;
+    width: 100px;
+    padding: 15px 10px;
     border-bottom: 1px solid #3BC1F3;
     /* letter-spacing: 0.5px; */
   }
@@ -699,8 +709,8 @@ footer span {
     text-decoration: none;
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom:10px;
+    padding-top: 24px;
+    padding-bottom:24px;
 
     line-height: 58px;
     text-align: center;
@@ -714,6 +724,10 @@ footer span {
     background-color: #444;
 	color: #fff;
   }
+
+table {
+   width: 20em;
+}
 
 /* media 960 */
 @media only screen and ( max-width: 980px ) {
@@ -732,11 +746,25 @@ footer span {
     margin-bottom: 60px;
   }
 
+
 }
 
 /* media 580 */
 @media only screen and ( max-width: 580px ) {
   
+  table {
+   width: 15em;
+}
+
+
+  #contact{
+    padding-top: 50px;
+  }
+
+  #map {
+    padding-top: 50px;
+  }
+
 .customer_center {
   width: 90%;
   margin-left:5%;
@@ -744,15 +772,16 @@ footer span {
 }
 
   .customer_center h2 {
- text-align: center;
- left:0%;
+   text-align: center;
+   left:0%;
     padding:0px;
-    font-size:20px;
+     padding-top: 0px;
   }
+
 
   .customer_center p {
     padding:0px;
-    font-size:25px;
+    font-size:16px;
     text-align: center;
   }
 
@@ -764,10 +793,9 @@ footer span {
   .go-top 
   {
     font-size: 22px;
-    bottom: 1em;
     right: 1.6em;
-    padding-top: 7px;
-    padding-bottom:7px;
+    padding-top: 20px;
+    padding-bottom:20px;
   }
 
   .pop, .pop2, .pop3, .pop4, .pop5, .pop6, .pop7, .pop8, .pop9, .pop10{
