@@ -1,5 +1,5 @@
-
-<?php include('form_process.php'); ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
 	<meta charset="utf-8">
@@ -47,7 +47,7 @@ http://www.tooplate.com/view/2080-minimax
 				<li><a href="#pricing" class="smoothScroll">진료과목</a></li>
 				<li><a href="#team" class="smoothScroll">자주하는 질문</a></li>
 				<li><a href="#contact" class="smoothScroll">진료 후기</a></li>
-				<li><a href="#map" class="smoothScroll">오시는 길</a></li>
+				<li><a href="#timetable" class="smoothScroll">진료 시간 </a></li>
 			</ul>
 		</div>
 	</div>
@@ -125,7 +125,7 @@ http://www.tooplate.com/view/2080-minimax
             <div class="row">
             	<div class="col-md-6">
                     <div class="right-image">
-                        <img src="images/profile.jpg">
+                        <img src="images/team3.jpg">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -325,7 +325,7 @@ http://www.tooplate.com/view/2080-minimax
 
 
 <!-- contact section -->
-<div id="contact" >
+<div id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
@@ -333,28 +333,20 @@ http://www.tooplate.com/view/2080-minimax
 				<p>치료를 받으시면서 혹은 받고 나서 느꼈던 소감을 올려주세요. 
 치료후기를 작성해 주신 분들 중 추첨을 통해 소정의 상품을 드립니다.</p>
 			</div>
-			<form action="<?= $_SERVER["PHP_SELF"]; ?>" method="post" role="form">
+			<form action="#" method="post" role="form">
 				<div class="col-md-1 col-sm-1"></div>
 				<div class="col-md-10 col-sm-10">
 					<div class="col-md-6 col-sm-6">
-						<input name="name" type="text" class="form-control" value="<?= $name ?>" id ="name" placeholder="이름">
-						<span style = " color:red"><?= $name_error ?></span>
+						<input name="name" type="text" class="form-control" id="name" placeholder="이름">
 				  	</div>
-				  	<div class="col-md-6 col-sm-6">
-						<input name="phone" type="text" class="form-control" value="<?= $phone ?>" id ="phone" placeholder="휴대폰 번호">
-						<span style = " color:red"><?= $phone_error ?></span>
-				  	</div>
-					<div class="col-md-12 col-sm-12">
-						<input name="address" type="text" value="<?= $address ?>" class="form-control" id="address" placeholder="간단한 거주지 정보(예 : 분당구 수내동)">
-						<span style = " color:red"><?= $address_error ?></span>
+					<div class="col-md-6 col-sm-6">
+						<input name="email" type="email" class="form-control" id="email" placeholder="이메일">
 				  	</div>
                     <div class="col-md-12 col-sm-12">
-						<input name="subject" type="text" value="<?= $subject ?>" class="form-control" id="subject" placeholder="제목">
-						<span style = " color:red"><?= $subject_error ?></span>
+						<input name="subject" type="text" class="form-control" id="subject" placeholder="제목">
 	    	  	  	</div>
 					<div class="col-md-12 col-sm-12">
-						<textarea name="message" value="<?= $message ?>" rows="5" class="form-control" id="message" placeholder="내용"></textarea>
-						<span style = " color:red"><?= $message_error ?></span>
+						<textarea name="message" rows="5" class="form-control" id="message" placeholder="내용"></textarea>
 					</div>
 					<div class="col-md-8 col-sm-8">
 						
@@ -362,7 +354,6 @@ http://www.tooplate.com/view/2080-minimax
 					<div class="col-md-4 col-sm-4">
 						<input name="submit" type="submit" class="form-control" id="submit" value="작성 완료">
 					</div>
-					<div style = " color: #ff9966; font-weight: bold; font-size: 14px;"><?= $success ?></div>
 				</div>
 				<div class="col-md-1 col-sm-1"></div>
 			</form>
@@ -371,46 +362,40 @@ http://www.tooplate.com/view/2080-minimax
 </div>
 
 
-<div id="map" style="padding-top: 120px">
-	<div class="container">
-		<div class ="customer_center">
-				<div class="row">
-                		<div class="col-md-6">
-		                    <div>
-		                        <h2 style="padding-top: 0px;">오시는 길</h2>
-								<p>경기도 성남시 중원구 성남동 505번지 우보빌딩 3층 </p>
-								<p>(모란역 4번출구 파리바게트 윗층)</p>
-		                	</div>
-                		</div>
-                		<div class="col-md-6">
-                    		<div>
-                        		<img src="images/map.png">
-                    		</div>
-                		</div>
-				</div>
-			</div>
-		</div>
 </div>
 
+<!--
+<div id="map">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h2>오시는 길</h2>
+				
+			</div>
+		</div>
+	</div>
+</div>
+-->
 
 <div id="timetable">
 <div class="container">
-		<div class ="customer_center">
+		
+				 <div class ="customer_center">
 				 	<div class="row">
 
                     <div class="col-md-4 col-sm-6" >
 				<h2 >전화상담 및 예약</h2>
-				<h2 style ="padding-top: 0px;"> 031-721-2872</h2>
+				<p> 010-020-0340</p>
 			</div>
 			<div class="col-md-4 col-sm-6"  >
 
-                        <table>
+                        <table style ="width: 15em">
                             <caption></caption>
                             <tbody>
-                                <tr><td >평일<br>(월,수,금 야간진료)</td><td><time datetime="10:00">10:00</time> ~ <time datetime="21:00">19:00</time></td></tr>
-                                <tr><td>토요일<br>(점심시간 없음)</td><td><time datetime="09:10">10:00</time> ~ <time datetime="13:00">16:00</time><p></p></td></tr>
-                                <tr><td>점심시간</td><td><time datetime="13:00">13:00</time> ~ <time datetime="14:30">14:00</time></td></tr>
-                                <tr><td>야간진료</td><td><time datetime="19:00">19:00</time> ~ <time datetime="21:00">21:00</time></td></tr>
+                                <tr><td >평일</td><td><time datetime="10:00">10:00</time> ~ <time datetime="21:00">21:00</time></td></tr>
+                                <tr><td>토요일</td><td><time datetime="09:10">09:10</time> ~ <time datetime="13:00">13:00</time></td></tr>
+                                <tr><td>점심시간</td><td><time datetime="13:00">13:00</time> ~ <time datetime="14:30">14:30</time></td></tr>
+                                <tr><td>야간 진료</td><td><time datetime="19:00">19:00</time> ~ <time datetime="21:00">21:00</time></td></tr>
                             </tbody>
                         </table>
                        </div>
@@ -446,3 +431,4 @@ http://www.tooplate.com/view/2080-minimax
 <script src="js/custom.js"></script>
 
 </body>
+</html>
